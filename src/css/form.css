@@ -4,7 +4,7 @@
   box-shadow: 0 6px 20px rgba(255, 152, 0, 0.3);
 }
 
-.search-form {
+.form {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -50,18 +50,16 @@
   min-width: 91px;
   height: 40px;
   padding: 8px 16px;
-  background-color: #4e75ff;
+  background-color: #ff5722;
   border: none;
   border-radius: 8px;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  color: white;
   cursor: pointer;
   transition: background-color 250ms ease;
-  color: white;
-  font-weight: 600;
-  background: #ff5722;
 }
 
 .search-btn:hover,

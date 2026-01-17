@@ -4,9 +4,6 @@ import 'simplelightbox/dist/simple-lightbox.min.css';
 const galleryEl = document.querySelector('.gallery');
 const loaderEl = document.querySelector('.loader');
 
-if (!galleryEl) console.error('Элемент .gallery не найден');
-if (!loaderEl) console.error('Элемент .loader не найден');
-
 const lightbox = new SimpleLightbox('.gallery a', {
   captionsData: 'alt',
   captionDelay: 250,
@@ -20,7 +17,7 @@ export function createGallery(images) {
       ({
         webformatURL,
         largeImageURL,
-        tags = 'Изображение',
+        tags = 'Image',
         likes,
         views,
         comments,
@@ -31,7 +28,7 @@ export function createGallery(images) {
           <img
             class="gallery-image"
             src="${webformatURL}"
-            alt="${tags.replace(/"/g, '&quot;')}"  // экранируем кавычки в alt
+            alt="${tags.replace(/"/g, '&quot;')}" // escape quotes in alt
             loading="lazy"
           />
         </a>
