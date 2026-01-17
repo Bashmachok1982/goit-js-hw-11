@@ -28,7 +28,7 @@ export function createGallery(images) {
           <img
             class="gallery-image"
             src="${webformatURL}"
-            alt="${tags.replace(/"/g, '&quot;')}" // escape quotes in alt
+            alt="${tags.replace(/"/g, '&quot;')}" 
             loading="lazy"
           />
         </a>
