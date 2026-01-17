@@ -4,7 +4,7 @@ import{a as d,S as g,i as c}from"./assets/vendor-Cq7ZUixy.js";(function(){const 
           <img
             class="gallery-image"
             src="${t}"
-            alt="${e.replace(/"/g,"&quot;")}" // escape quotes in alt
+            alt="${e.replace(/"/g,"&quot;")}" 
             loading="lazy"
           />
         </a>
